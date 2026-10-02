@@ -2,11 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      placeholder=""
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mirrored AltSchool Form</title>
   </head>
   <body>
@@ -16,146 +12,144 @@
 
       <nav aria-label="global navigation">
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/form.html" aria-current="page">Application Form</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html" aria-current="page">Application Form</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <fieldset>
-        <legend>Personal Details</legend>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <p>
+            <label for="first-name">First Name</label>
+            <br />
+            <input type="text" id="first-name" name="first-name" required />
+          </p>
+
+          <p>
+            <label for="surname">Surname</label>
+            <br />
+            <input type="text" id="surname" name="surname" />
+          </p>
+
+          <p>
+            <label for="email-address">Email Address</label>
+            <br />
+            <input
+              type="email"
+              id="email-address"
+              name="email-address"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="gender">Gender</label>
+            <br />
+            <select name="gender" id="gender">
+              <option value="" selected disabled>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth</label>
+            <br />
+            <input type="date" id="dob" name="dob" />
+          </p>
+        </fieldset>
+
+        <p></p>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+          <p>
+            <label for="phone-number">Phone Number</label>
+            <br />
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              maxlength="11"
+              minlength="10"
+            />
+          </p>
+
+          <p>
+            <label for="address">Home Address</label>
+            <br />
+            <input type="text" id="address" name="address" />
+          </p>
+
+          <p>
+            <label for="state">State Of Residence</label>
+            <br />
+            <input type="text" id="state" name="state" />
+          </p>
+
+          <p>
+            <label for="country">Country</label>
+            <br />
+            <select name="country" id="country">
+              <option value="" selected disabled>Select Country</option>
+              <option value="ghana">Ghana</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="togo">Togo</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <p></p>
+
+        <fieldset>
+          <legend>Background</legend>
+
+          <p>
+            <label for="degree">Educational Qualification</label>
+            <br />
+            <select name="degree" id="degree">
+              <option value="" selected disabled>--Select--</option>
+              <option value="hnd">HND</option>
+              <option value="b.sc.">B.Sc.</option>
+              <option value="m.sc.">M.Sc.</option>
+              <option value="phd">PHD</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="status">Employment Status</label>
+            <br />
+            <select name="status" id="status">
+              <option value="" selected disabled>Select your status</option>
+              <option value="employed">Employed</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="self-employed">Self-employed</option>
+              <option value="student">Student</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="experience">Work Experience</label>
+            <br />
+            <select name="experience" id="experience">
+              <option value="" selected disabled>Select</option>
+              <option value="0-2">0 - 2 years</option>
+              <option value="2-5">2 - 5years</option>
+              <option value="6+">6 years and above</option>
+            </select>
+          </p>
+        </fieldset>
 
         <p>
-          <label for="id">First Name</label>
-          <br />
-          <input
-            type="text"
-            id="first-name"
-            placeholder=""
-            name="first-name"
-            required
-          />
+          <button type="submit">Submit and Continue</button>
         </p>
-
-        <p>
-          <label for="id">Surname</label>
-          <br />
-          <input type="text" id="surname" placeholder="" name="surname" />
-        </p>
-
-        <p>
-          <label for="id">Email Address</label>
-          <br />
-          <input
-            type="email"
-            id="email-address"
-            placeholder=""
-            name="email-address"
-            required
-          />
-        </p>
-
-        <p>
-          <label for="id">Gender</label>
-          <br />
-          <select>
-            <option value="" selected disabled>Select Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="others">Others</option>
-          </select>
-        </p>
-
-        <p>
-          <label for="id">Date of Birth</label>
-          <br />
-          <input type="date" id="dob" placeholder="" name="dob" />
-        </p>
-      </fieldset>
-
-      <p></p>
-
-      <fieldset>
-        <legend>Contact Information</legend>
-        <p>
-          <label for="id">Phone Number</label>
-          <br />
-          <input
-            type="number"
-            id="phone-number"
-            name="phone-number"
-            maxlength="11"
-            minlength="10"
-          />
-        </p>
-
-        <p>
-          <label for="id">Home Adress</label>
-          <br />
-          <input type="text" id="address" placeholder="" name="address" />
-        </p>
-
-        <p>
-          <label for="id">State Of Residence</label>
-          <br />
-          <input type="text" id="state" placeholder="" name="state" />
-        </p>
-
-        <p>
-          <label for="id">Country</label>
-          <br />
-          <select>
-            <option value="" selected disabled>Select Country</option>
-            <option value="ghana">Ghana</option>
-            <option value="nigeria">Nigeria</option>
-            <option value="togo">Togo</option>
-          </select>
-        </p>
-      </fieldset>
-
-      <p></p>
-
-      <fieldset>
-        <legend>Background</legend>
-
-        <p>
-          <label for="id">Eucational Qualification</label>
-          <br />
-          <select name="degree" id="degree">
-            <option value="" selected disabled>--Select--</option>
-            <option value="hnd">HND</option>
-            <option value="b.sc.">B.Sc.</option>
-            <option value="m.sc.">M.Sc.</option>
-            <option value="phd">PHD</option>
-          </select>
-        </p>
-
-        <p>
-          <label for="id">Employment Status</label>
-          <br />
-          <select name="status" id="status">
-            <option value="" selected disabled>Select your status</option>
-            <option value="employed">Employed</option>
-            <option value="unemployed">Unemployed</option>
-            <option value="self-employed">Self-employed</option>
-            <option value="student">Student</option>
-          </select>
-        </p>
-
-        <p>
-          <label for="id">Work Experience</label>
-          <br />
-          <select name="experience" id="experience">
-            <option value="" selected disabled>Select</option>
-            <option value="">0 - 2 years</option>
-            <option value="">2 - 5years</option>
-            <option value="">6 years and above</option>
-          </select>
-        </p>
-      </fieldset>
-
-      <p></p>
+      </form>
     </main>
+
     <footer>
       <address>
         28,Lawal Adenrele Street, Ijegun,
@@ -163,7 +157,7 @@
         Lagos, Nigeria
       </address>
 
-      <p>&copy 2026 All Rights Reserved</p>
+      <p>&copy; 2026 All Rights Reserved</p>
 
       <p>
         <a href="#header">Back to Top</a>
